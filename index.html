@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aggs Weather App</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <title> Aggs Weather App</title>
   </head>
   <body>
     <div class="weather-app">
@@ -18,8 +19,23 @@
         <input type="submit" value="Search" class="search-button" />
         </form>
      </header>   
-
-
-    <footer>Coded by Agnes Derembwe</footer>
+<main>
+  <div class="current-weather">
+    <h1 class="current-city" id="current-city"> Roodepoort</h1>
+    <p class="current-details">
+      <span id="current-date"></span>,generally clear <br/>
+      Humidity: <strong>43%</strong>, Wind: <strong>5 km/h</strong>
+    </p>
+  </div>
+</main>
+    <footer>
+      <p>
+        This project was coded by 
+        <a href="#" target="_blank">Agnes Derembwe</a> and is 
+        <a href="#" target="_blank">on GitHub</a> and
+        <a href="#" target="_blank">hosted on Netlify</a>
+      </p>
+    </footer>
   </body>
+  <script src="src/index.js"></script>
 </html>
