@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-    <title> Aggs Weather App</title>
+    <title>Aggs Weather App</title>
   </head>
   <body>
     <div class="weather-app">
-    <h1>Welcome to my Weather App!</h1>
     <header>
-      <form id="search-form">
+      <form id="search-form" class="search-form">
         <input type="search"
         placeholder="Enter a city.."
         required class="search-input"
@@ -23,28 +22,32 @@
 <main>
   <div class="current-weather">
     <div>
-      <h1 class="current-city" id="current-city">Roodepoort</h1>
+      <h1 class="current-city" id="current-city"></h1>
       <p class="current-details">
-        <span id="current-date"></span>, partly cloud <br />
-        Humidity: <strong>63%</strong>, Wind: <strong>5.2km/h</strong>
+        <span id="time"></span>
+        <span id="description"></span>
+        <br/>
+
+        Humidity: <strong id="humidity"></strong>, Wind: <strong id="wind-speed"></strong>
       </p>
     </div>
   
   <div class="current-temperature">
-    <span class="current-temperature-icon">⛅</span
-    ><span class="current-temperature-value" id="current-temperature"
-      >16</span
-    ><span class="current-temperature-unit">°C</span>
+    <span class="current-temperature-icon" id="icon"></span>
+    <span class="current-temperature-value" id="current-temperature"></span>
+    <span class="current-temperature-unit">°C</span>
   </div>
 </div>
+<div class="weather-forecast" id="forecast"></div>
 </main>
     <footer>
-      <p>
+    
         This project was coded by 
-        <a href="#" target="_blank">Agnes Derembwe</a> and is 
-        <a href="#" target="_blank">on GitHub</a> and
-        <a href="#" target="_blank">hosted on Netlify</a>
-      </p>
+    <a href="https://github.com/Aggs82" target="_blank">Agnes Derembwe</a>, is open -sourced on
+    <a href="https://github.com/Aggs82/Aggs" target="_blank">Github</a>
+    and hosted on
+    <a href="https://aggs-weather-app.netlify.app/" target="_blank">Netlify</a>
+
     </footer>
   </body>
   <script src="src/index.js"></script>
